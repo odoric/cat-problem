@@ -1,0 +1,62 @@
+.App {
+  font-family: cursive;
+  text-align: center;
+}
+
+.cat-panel-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightgray;
+}
+
+.cat-panel {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 200px 100px;
+  grid-template-rows: 150px 30px 30px 90px;
+  grid-template-areas:
+    "photo photo"
+    "name name"
+    "breed age"
+    "desc desc";
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.cat-photo {
+  grid-area: photo;
+  max-width: 300px;
+  max-height: 150px;
+}
+
+.cat-name {
+  grid-area: name;
+  text-align: left;
+  font-weight: bold;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: black;
+}
+
+.cat-breed {
+  grid-area: breed;
+  text-align: left;
+  padding: 5px;
+}
+
+.cat-age {
+  grid-area: age;
+  text-align: left;
+  padding: 5px;
+}
+
+.cat-desc {
+  grid-area: desc;
+  text-align: left;
+  padding: 5px;
+  font-style: oblique;
+}
