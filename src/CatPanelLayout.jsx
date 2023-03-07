@@ -1,5 +1,5 @@
 import { CatPanel } from "./CatPanel";
-import { CatRecord } from "./data";
+import { type CatRecord } from "./data";
 import "./styles.css";
 
 type Props = {
